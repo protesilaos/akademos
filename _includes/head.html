@@ -1,0 +1,14 @@
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>{% if page.title %}{{ page.title | strip_html }} &#8226; {% endif %}{{ site.title | strip_html }}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS -->
+    <style type="text/css">
+      {% capture include_to_scssify %}
+        {% include akademos.scss %}
+      {% endcapture %}
+      {{ include_to_scssify | scssify }}
+    </style>
+</head>

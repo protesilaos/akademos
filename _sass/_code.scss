@@ -1,0 +1,22 @@
+figure {
+  margin: 0;
+}
+
+p code,
+li code {
+  color: $text1;
+  font-style: normal;
+  background: $bhl;
+  padding: ($shalf / 5) ($shalf / 3);
+  @include radius(3%);
+}
+
+pre {
+  padding: $sone;
+  overflow-x: scroll;
+  margin-bottom: $vrythm;
+  white-space: pre;
+  overflow-x: auto;
+  word-break: inherit;
+  word-wrap: inherit;
+}

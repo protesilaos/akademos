@@ -1,0 +1,5 @@
+{% assign pages = site.pages | where: 'action', 'true' %}
+
+{% for page in pages %}
+  <a href="{{ page.url | prepend: site.baseurl }}">{{ page.tag }}</a>
+{% endfor %}

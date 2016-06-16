@@ -1,0 +1,162 @@
+/*
+    Name: Overgrowth (light variant)
+    Author: Protesilaos Stavrou (http://www.protesilaos.com)
+    Description: Tested with Rouge-enabled Jekyll sites
+    Theme URL: http://www.protesilaos.com/overgrowth
+*/
+
+// Colour scheme --------------------------
+
+$dbg: #233F34; // Dark background
+$dhl: #334F44; // Dark highlight
+$dt2: #637F74; // Dark bg text secondary
+$dt1: #93AFA4; // Dark bg text primary
+
+$lbg: #E6E5D2; // Light background
+$lhl: #D6D5C2; // Light highlight
+$lt2: #A6A592; // Light bg text secondary
+$lt1: #767562; // Light bg text primary
+
+$red: #CA4A4A; // Red
+$ora: #BB7628; // Orange
+$yel: #A8950D; // Yellow
+$gre: #4BA212; // Green
+
+$cya: #15B59B; // Cyan
+$blu: #359FCA; // Blue
+$vio: #8A6EBB; // Violet
+$mag: #BB6E8A; // Magenta
+
+// Site-wide colours
+
+$bg: lighten($lbg, 1.5%);
+$bg1: $lbg;
+$bg2: darken($lbg, 1.5%);
+$bhl: $lhl;
+$text1: $lt1;
+$text2: $lt2;
+$link: $gre;
+$linkalt: $ora;
+
+// Dividers
+$dark1: transparentize($text1, .90);
+$dark2: transparentize($text1, .80);
+$penumbra: 0 1px 3px transparentize(#000, .8);
+
+// Syntax Defaults ------------------------
+
+$t1: $text1;
+$t2: $text2;
+$background: $bg1;
+
+// Colour order
+
+$primary1: $gre;
+$primary2: $ora;
+$primary3: $yel;
+
+$secondary1: $mag;
+$secondary2: $cya;
+
+$tertiary1: $blu;
+$tertiary2: $vio;
+$tertiary3: $red;
+
+// Syntax -------------------------------
+// Classes are prefixed with .highlight
+
+.highlight {
+  background: $background;
+  color: $t1;
+
+  @include desktop {
+    @include bigblock;
+    @include shadow;
+  }
+
+  .w {
+    color: $t1;
+  }
+
+  .c,
+  .cd,
+  .cm,
+  .c1,
+  .cs,
+  .o,
+  .ow,
+  .p,
+  .pi {
+    color: $t2;
+  }
+
+  .cp,
+  .nt,
+  .nn,
+  .nc,
+  .no {
+    color: $primary1;
+  }
+
+  .nv,
+  .na {
+    color: $primary2;
+  }
+
+  .gh {
+    color: $primary2;
+    font-weight: bold;
+  }
+
+  .m,
+  .mf,
+  .mh,
+  .mi,
+  .il,
+  .mo,
+  .mb,
+  .mx,
+  .ss,
+  .nb,
+  .gi,
+  .s,
+  .sb,
+  .sc,
+  .sd,
+  .s2,
+  .sh,
+  .sx,
+  .s1 {
+    color: $primary3;
+  }
+
+  .nf,
+  .sr {
+    color: $secondary1;
+  }
+
+  .si,
+  .se {
+    color: $secondary2;
+  }
+
+
+  .kc,
+  .kt,
+  .kd {
+    color: $tertiary1;
+  }
+
+  .k,
+  .kn,
+  .kp,
+  .kr,
+  .kv {
+    color: $tertiary2;
+  }
+
+  .err,
+  .gd {
+    color: $tertiary3;
+  }
+}

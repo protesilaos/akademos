@@ -1,0 +1,12 @@
+<div class="nextprev clearfix">
+  {% if page.next.url %}
+    <div class="nextprev-item">
+      <span class="nextprev-tag">Next:</span><a class="next" href="{{ page.next.url }}">{{ page.next.title }}</a>
+    </div>
+  {% endif %}
+  {% if page.previous.url %}
+    <div class="nextprev-item">
+      <span class="nextprev-tag">Previous:</span><a class="prev" href="{{ page.previous.url }}">{{ page.previous.title }}</a>
+    </div>
+  {% endif %}
+</div>

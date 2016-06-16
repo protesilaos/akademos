@@ -1,0 +1,93 @@
+p {
+  line-height: $line-height;
+}
+
+small,
+.small {
+  font-size: $h7;
+}
+
+sup {
+  position: relative;
+  vertical-align: middle;
+  top: -0.9ex;
+}
+
+blockquote {
+  border-left: medium solid $dark1;
+  font-style: italic;
+  padding: 0 0 0 $sone;
+  margin: 0;
+
+  blockquote {
+    font-family: $serif;
+    font-style: normal;
+    border-left: thin solid $dark1;
+  }
+}
+
+.definition {
+  font-size: $h6;
+  border: thin solid $dark1;
+  margin-top: $vrythm;
+  margin-bottom: $vrythm;
+  padding: $shalf $sone;
+
+    &::before {
+    content: "Definition";
+    display: block;
+    font-family: $mono;
+    font-size: $h7;
+    color: $text2;
+    margin: $shalf 0;
+  }
+
+  @include desktop {
+    float: right;
+    width: ($measure / 3);
+    margin-top: $shalf;
+    margin-right: -($measure / 6);
+    margin-left: $sone;
+    margin-bottom: $vrythm;
+  }
+}
+
+.proposition {
+  @extend .definition;
+
+    &::before {
+      @extend .definition::before;
+      content: "Proposition";
+    }
+}
+
+p + h2,
+p + h3,
+ul + h2,
+ul + h3,
+ol + h2,
+ol + h3,
+blockquote + h2,
+blockquote + h3,
+div + h2,
+div + h3 {
+  margin-top: $vrythm * 1.5;
+}
+
+h2 + h3,
+h3 + h4 {
+  margin-top: 0;
+}
+
+ul ul,
+ol ol {
+  margin-bottom: 0;
+}
+
+.print-meta {
+  display: none; /* Hide and then reveal on print */
+}
+
+.print-section {
+  page-break-before: always;
+}

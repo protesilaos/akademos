@@ -1,0 +1,16 @@
+a {
+  color: $link;
+  text-decoration: none;
+
+  &:hover,
+  &:focus,
+  &:active {
+    text-decoration: underline;
+  }
+}
+
+.site-header a,
+.site-footer a,
+.indexlink {
+  color: $linkalt;
+}

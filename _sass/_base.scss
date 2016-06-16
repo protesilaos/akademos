@@ -1,0 +1,116 @@
+@charset "UTF-8";
+
+html {
+  font-size: $base-font-size;
+  height: auto;
+  min-height: 100%;
+
+  @include tablet {
+    font-size: $base-font-size + 2;
+  }
+
+  @include desktop {
+    font-size: $base-font-size + 4;
+  }
+}
+
+img {
+  max-width: 100%;
+}
+
+em img {
+  @extend img;
+  margin-left: 0;
+}
+
+svg {
+  max-height: 100%;
+}
+
+body {
+  @extend html;
+  @include box-size;
+  @include bodynormal;
+  font-size: 100%;
+  color: $text1;
+  background-color: $bg;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+  line-height: $heading-line-height;
+  margin-top: $vrythm;
+  margin-bottom: $vrythm / 2;
+}
+
+p,
+dl,
+ol,
+ul {
+  font-size: $h4;
+  margin-top: 0;
+  margin-bottom: $vrythm;
+}
+
+ol,
+ul {
+  padding-left: $sone;
+
+  @include desktop {
+    padding-left: 0;
+  }
+}
+
+pre,
+code,
+samp {
+  font-family: $mono;
+  font-size: $h6;
+}
+
+pre {
+  margin-top: 0;
+  margin-bottom: $vrythm;
+  overflow-x: scroll;
+}
+
+h1,
+.h1 {
+  font-size: $h1;
+}
+
+h2,
+.h2 {
+  font-size: $h2;
+}
+
+h3,
+.h3 {
+  font-size: $h3;
+}
+
+h4,
+.h4 {
+  font-size: $h4;
+}
+
+h5,
+.h5 {
+  font-size: $h5;
+}
+
+h6,
+.h6 {
+  font-size: $h6;
+}
+
+abbr {
+  border-bottom: thin dotted $dark2;
+  cursor: help;
+}

@@ -1,0 +1,62 @@
+@charset "UTF-8";
+
+/*
+*
+* Akademos - Minimalist theme for writers and coders
+* @author Protesilaos Stavrou <public@protesilaos.com> (http://www.protesilaos.com/)
+* @license MIT
+*
+*/
+
+@import
+        "normalize",
+        "variables"
+;
+
+// This goes to the demo
+
+{% if page.permalink == "/oliveira-light/" %}
+  @import "themes/oliveira-light";
+{% elsif page.permalink == "/oliveira-dark/" %}
+  @import "themes/oliveira-dark";
+{% elsif page.permalink == "/blau-light/" %}
+  @import "themes/blau-light";
+{% elsif page.permalink == "/blau-dark/" %}
+  @import "themes/blau-dark";
+{% elsif page.permalink == "/cyprium-light/" %}
+  @import "themes/cyprium-light";
+{% elsif page.permalink == "/cyprium-dark/" %}
+  @import "themes/cyprium-dark";
+{% elsif page.permalink == "/flowerbed-light/" %}
+  @import "themes/flowerbed-light";
+{% elsif page.permalink == "/flowerbed-dark/" %}
+  @import "themes/flowerbed-dark";
+{% elsif page.permalink == "/nefelio-light/" %}
+  @import "themes/nefelio-light";
+{% elsif page.permalink == "/nefelio-dark/" %}
+  @import "themes/nefelio-dark";
+{% elsif page.permalink == "/overgrowth-light/" %}
+  @import "themes/overgrowth-light";
+{% elsif page.permalink == "/overgrowth-dark/" %}
+  @import "themes/overgrowth-dark";
+{% endif %}
+
+// This goes to the gem
+
+{% if site.akademos-style %}
+  @import "{{ site.akademos-style | prepend: "themes/" }}";
+{% endif %}
+
+@import
+        "base",
+        "links",
+        "placement",
+        "typography",
+        "header",
+        "footer",
+        "posts",
+        "nextprev",
+        "footnotes",
+        "code",
+        "syntax"
+;

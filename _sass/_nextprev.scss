@@ -1,0 +1,32 @@
+.nextprev {
+  background: $bg1;
+  font-size: $h3;
+  display: block;
+  overflow: hidden;
+  margin: 0;
+
+  div:first-child {
+    padding-bottom: $vrythm;
+  }
+
+  div + div {
+    padding-top: $vrythm;
+    border-top: thin solid $dark1;
+  }
+
+  div,
+  div:only-child {
+    padding: ($vrythm * 3) ($sone * 2);
+  }
+}
+
+.nextprev-item {
+  @extend .measure;
+  display: block;
+}
+
+.nextprev-tag {
+  font-family: $mono;
+  color: $text2;
+  margin-right: $shalf;
+}

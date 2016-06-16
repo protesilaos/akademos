@@ -1,0 +1,56 @@
+.footnotes {
+  padding: $sone 0 0;
+  margin: ($vrythm * 2) 0;
+  border-top: thin solid $dark2;
+
+  @include desktop {
+    @include bigblock;
+    background: $bg1;
+    border-top: none;
+  }
+
+  ol,
+  ul,
+  ol li,
+  ul li,
+  p {
+    font-size: $h5;
+
+    @include desktop {
+      font-size: $h4;
+    }
+  }
+
+  p {
+    margin-bottom: $shalf;
+  }
+
+  blockquote p {
+    font-family: inherit;
+  }
+
+  &:before {
+    content: "Footnotes";
+    display: block;
+    font-weight: 700;
+    margin: 0 0 $vrythm;
+  }
+}
+
+.footnote {
+  font-style: normal;
+  padding: ($sone / 100) ($sone / 6);
+  margin: 0 ($sone / 50);
+
+  &::before {
+    content: "[";
+  }
+
+  &::after {
+    content: "]";
+  }
+
+  &:hover {
+    @extend .footnote;
+  }
+}

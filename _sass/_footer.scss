@@ -1,0 +1,29 @@
+.site {
+  @include display;
+  @include direction;
+  min-height: 100vh;
+}
+
+.site-wrap {
+  @include box-flex;
+}
+
+.site-footer {
+  background: $bg2;
+  color: $text1;
+  text-align: left;
+
+  span {
+  display: block;
+  font-size: $h6;
+  margin: $shalf auto;
+
+    @include desktop {
+      display: inline-block;
+    }
+  }
+}
+
+.footer-inner {
+  padding: $sone 0;
+}

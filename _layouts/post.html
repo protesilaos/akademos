@@ -1,0 +1,27 @@
+---
+layout: default
+---
+<div class="post-header">
+  <h1 class="measure">{{ page.title }}</h1>
+  {% if page.subtitle %}
+    <p class="post-intro measure">{{ page.subtitle }}</p>
+  {% endif %}
+  <span class="post-meta measure">
+    {% if site.date_format %}
+      <time>{{ page.date | date: site.date_format }}</time>
+    {% else %}
+      <time>{{ page.date | date: '%B %d, %Y' }}</time>
+    {% endif %}
+    {% if page.author %}
+      <span>{{ page.author }}</span>
+    {% elsif site.author %}
+      <span>{{ site.author }}</span>
+    {% endif %}
+  </span>
+</div>
+
+<article class="post-content measure">
+  {{ content }}
+</article>
+
+{% include nextprev.html %}

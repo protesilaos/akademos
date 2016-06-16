@@ -1,0 +1,162 @@
+/*
+    Name: Nefelio (dark variant)
+    Author: Protesilaos Stavrou (http://www.protesilaos.com)
+    Description: Tested with Rouge-enabled Jekyll sites
+    Theme URL: http://www.protesilaos.com/nefelio
+*/
+
+// Colour scheme --------------------------
+
+$dbg: #1F1B1D; // Dark background
+$dhl: #2F2B2D; // Dark highlight
+$dt2: #6F6B6D; // Dark bg text secondary
+$dt1: #9F9B9D; // Dark bg text primary
+
+$lbg: #EAEFF2; // Light background
+$lhl: #DADFE2; // Light highlight
+$lt2: #8A8F92; // Light bg text secondary
+$lt1: #5A5F62; // Light bg text primary
+
+$red: #BA2F5F; // Red
+$ora: #CA6F5F; // Orange
+$yel: #CAAF5F; // Yellow
+$gre: #1CB592; // Green
+
+$cya: #14B7BD; // Cyan
+$blu: #3F8EDA; // Blue
+$vio: #956CDA; // Violet
+$mag: #BA4295; // Magenta
+
+// Site-wide colours
+
+$bg: lighten($dbg, 0.8%);
+$bg1: $dbg;
+$bg2: darken($dbg, 0.8%);
+$bhl: $dhl;
+$text1: $dt1;
+$text2: $dt2;
+$link: $gre;
+$linkalt: $vio;
+
+// Dividers
+$dark1: transparentize($text1, .90);
+$dark2: transparentize($text1, .80);
+$penumbra: 0 1px 3px transparentize(#000, .8);
+
+// Syntax Defaults ------------------------
+
+$t1: $text1;
+$t2: $text2;
+$background: $bg1;
+
+// Colour order
+
+$primary1: $mag;
+$primary2: $gre;
+$primary3: $cya;
+
+$secondary1: $blu;
+$secondary2: $vio;
+
+$tertiary1: $ora;
+$tertiary2: $yel;
+$tertiary3: $red;
+
+// Syntax -------------------------------
+// Classes are prefixed with .highlight
+
+.highlight {
+  background: $background;
+  color: $t1;
+
+  @include desktop {
+    @include bigblock;
+    @include shadow;
+  }
+
+  .w {
+    color: $t1;
+  }
+
+  .c,
+  .cd,
+  .cm,
+  .c1,
+  .cs,
+  .o,
+  .ow,
+  .p,
+  .pi {
+    color: $t2;
+  }
+
+  .cp,
+  .nt,
+  .nn,
+  .nc,
+  .no {
+    color: $primary1;
+  }
+
+  .nv,
+  .na {
+    color: $primary2;
+  }
+
+  .gh {
+    color: $primary2;
+    font-weight: bold;
+  }
+
+  .m,
+  .mf,
+  .mh,
+  .mi,
+  .il,
+  .mo,
+  .mb,
+  .mx,
+  .ss,
+  .nb,
+  .gi,
+  .s,
+  .sb,
+  .sc,
+  .sd,
+  .s2,
+  .sh,
+  .sx,
+  .s1 {
+    color: $primary3;
+  }
+
+  .nf,
+  .sr {
+    color: $secondary1;
+  }
+
+  .si,
+  .se {
+    color: $secondary2;
+  }
+
+
+  .kc,
+  .kt,
+  .kd {
+    color: $tertiary1;
+  }
+
+  .k,
+  .kn,
+  .kp,
+  .kr,
+  .kv {
+    color: $tertiary2;
+  }
+
+  .err,
+  .gd {
+    color: $tertiary3;
+  }
+}

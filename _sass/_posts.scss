@@ -1,0 +1,153 @@
+.homepage {
+  .home-loop {
+    margin: ($vrythm * 3) 0;
+
+    &:last-child {
+      margin-bottom: ($vrythm * 2.5);
+    }
+  }
+}
+
+.home-loop {
+  margin: ($vrythm * 2) 0;
+
+  &:last-child {
+    margin-bottom: ($vrythm * 1.5);
+  }
+
+  h2 {
+    font-size: $h3;
+  }
+
+  ul {
+    margin: 0;
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 0;
+
+    li {
+      padding: $sone 0;
+      border-bottom: thin solid $dark1;
+    }
+
+    li:last-child {
+      border-bottom: none;
+    }
+
+    a {
+      display: inline-block;
+
+      @include tablet {
+        float: left;
+        width: 80%;
+      }
+    }
+
+    .post-meta {
+      font-family: $mono;
+      font-size: $h6;
+      color: $text2;
+      display: block;
+      margin: $shalf 0;
+
+      @include tablet {
+        display: inline-block;
+        float: right;
+        width: 15%;
+        font-size: $h7;
+        margin: $shalf 0 0 5%;
+      }
+    }
+  }
+
+  .allposts {
+    font-family: $mono;
+    font-size: $h6;
+
+    &::after {
+    content: "→";
+    display: inline-block;
+    margin-left: $shalf / 2;
+    }
+  }
+}
+
+.post-header {
+  background: $bg1;
+  color: $text1;
+  text-align: left;
+  padding: ($vrythm * 2) ($sone * 2);
+  margin: 0 0 ($vrythm * 2);
+
+  h1 {
+    font-size: $h4 * 1.602;
+    font-weight: 400;
+    margin: $shalf auto $vrythm;
+    padding: 0;
+
+    @include desktop {
+      font-size: $h1;
+    }
+  }
+
+  .post-meta {
+    display: block;
+    color: $text2;
+    font-size: $h5;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .indexlink::before {
+    content: "/";
+    display: inline-block;
+    color: $dark2;
+    padding: 0 $shalf 0 ($shalf / 2);
+  }
+
+  @include desktop {
+    padding: ($vrythm * 3) ($sone * 2);
+  }
+}
+
+.post-content {
+  padding-bottom: $vrythm;
+
+  +.nextprev {
+    padding-bottom: 0;
+  }
+}
+
+.prot-deprecated {
+  font-style: italic;
+}
+
+.home-description {
+  @extend .post-header;
+
+  .version {
+    font-family: $mono;
+    color: $text2;
+  }
+}
+
+.home-title {
+  margin-top: 0;
+}
+
+.post-intro {
+  color: $text2;
+  font-size: $h2;
+  padding: 0;
+
+  +.post-meta {
+    margin: $vrythm auto;
+    padding: 0;
+  }
+}
+
+.index-note {
+  margin: ($vrythm * 2) 0;
+  color: $text2;
+  font-size: $h3;
+}

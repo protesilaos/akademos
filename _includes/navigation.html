@@ -1,0 +1,9 @@
+{% assign pages = site.pages | where: 'layout', 'page' | sort: 'order' %}
+
+<ul>
+  {% for page in pages %}
+    {% if page.order %}
+      <li><a href="{{ page.url | prepend: site.baseurl }}">{{ page.tag }}</a></li>
+    {% endif %}
+  {% endfor %}
+</ul>
