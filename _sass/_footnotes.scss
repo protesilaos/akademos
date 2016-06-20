@@ -5,6 +5,7 @@
 
   @include desktop {
     @include bigblock;
+    @include shadow;
     background: $bg1;
     border-top: none;
   }

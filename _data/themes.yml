@@ -1,0 +1,32 @@
+- name: Oliveira light
+  url: "oliveira-light"
+- name: Oliveira dark
+  url: "oliveira-dark"
+- name: Blau light
+  url: "blau-light"
+- name: Blau dark
+  url: "blau-dark"
+- name: Cyprium light
+  url: "cyprium-light"
+- name: Cyprium dark
+  url: "cyprium-dark"
+- name: Nefelio light
+  url: "nefelio-light"
+- name: Nefelio dark
+  url: "nefelio-dark"
+- name: Flowerbed light
+  url: "flowerbed-light"
+- name: Flowerbed dark
+  url: "flowerbed-dark"
+- name: Overgrowth light
+  url: "overgrowth-light"
+- name: Overgrowth dark
+  url: "overgrowth-dark"
+- name: Symbiosis light
+  url: "symbiosis-light"
+- name: Symbiosis dark
+  url: "symbiosis-dark"
+- name: Alto light (default)
+  url: "alto-light"
+- name: Alto dark
+  url: "alto-dark"

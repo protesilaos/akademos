@@ -1,0 +1,63 @@
+/*
+    Name: Symbiosis (dark variant)
+    Author: Protesilaos Stavrou (http://www.protesilaos.com)
+    Description: Tested with Rouge-enabled Jekyll sites
+    Theme URL: http://www.protesilaos.com/symbiosis
+*/
+
+// Colour scheme --------------------------
+
+$dbg: #212D2C; // Dark background
+$dhl: #313D3C; // Dark highlight
+$dt2: #616D6C; // Dark bg text secondary
+$dt1: #919D9C; // Dark bg text primary
+
+$lbg: #FCFAF9; // Light background
+$lhl: #ECEAE9; // Light highlight
+$lt2: #9C9A99; // Light bg text secondary
+$lt1: #5C5A59; // Light bg text primary
+
+$red: #C14F4D; // Red
+$ora: #BD6D36; // Orange
+$yel: #BE9601; // Yellow
+$gre: #66AB24; // Green
+
+$cya: #48BB9A; // Cyan
+$blu: #4D8CBD; // Blue
+$vio: #9A69BD; // Violet
+$mag: #CB7EAA; // Magenta
+
+// Site-wide colours
+
+$bg: lighten($dbg, 0.8%);
+$bg1: $dbg;
+$bg2: darken($dbg, 0.8%);
+$bhl: $dhl;
+$text1: $dt1;
+$text2: $dt2;
+$link: $blu;
+$linkalt: $ora;
+
+// Dividers
+$dark1: transparentize($text1, .90);
+$dark2: transparentize($text1, .80);
+$penumbra: 0 1px 3px transparentize(#000, .8);
+
+// Syntax Defaults ------------------------
+
+$t1: $text1;
+$t2: $text2;
+$background: $bg1;
+
+// Colour order
+
+$primary1: $vio;
+$primary2: $red;
+$primary3: $cya;
+
+$secondary1: $blu;
+$secondary2: $ora;
+
+$tertiary1: $gre;
+$tertiary2: $yel;
+$tertiary3: $mag;

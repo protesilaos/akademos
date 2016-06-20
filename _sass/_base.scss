@@ -61,17 +61,17 @@ ul {
 ol,
 ul {
   padding-left: $sone;
-
-  @include desktop {
-    padding-left: 0;
-  }
 }
 
 pre,
 code,
 samp {
   font-family: $mono;
-  font-size: $h6;
+  font-size: $h7;
+
+  @include tablet {
+    font-size: $h6;
+  }
 }
 
 pre {

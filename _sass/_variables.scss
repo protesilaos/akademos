@@ -1,4 +1,5 @@
 // Typography
+
 $base-font-size: 16px;
 $serif: Georgia, Palatino, "Palatino Linotype", Times, "Times New Roman", serif !default;
 $sans: "Helvetica Neue", Helvetica, Arial, sans-serif !default;
@@ -9,6 +10,7 @@ $vrythm: 1.602rem;
 $heading-line-height: 1.125;
 
 // Font scale
+
 $h1: 2.027rem !default;
 $h2: 1.424rem !default;
 $h3: 1.125rem !default;
@@ -18,34 +20,37 @@ $h6: .79rem !default;
 $h7: .702rem !default;
 
 // Page width
+
 $measure: 36rem;
 
 // Viewports
+
 $tablet: 48em;
 $desktop: 64em;
 
+// Alto (light variant)
 // Default colour scheme
-// Will be used if no theme is set
+// Will be used if no theme is specified
 
-$dbg: #2A2A2A !default; // Dark background
-$dhl: #3A3A3A !default; // Dark highlight
-$dt2: #6A6A6A !default; // Dark bg text secondary
-$dt1: #9A9A9A !default; // Dark bg text primary
+$dbg: #181D1A !default; // Dark background
+$dhl: #282D2A !default; // Dark highlight
+$dt2: #686D6A !default; // Dark bg text secondary
+$dt1: #989D9A !default; // Dark bg text primary
 
-$lbg: #F5F5F5 !default; // Light background
-$lhl: #E5E5E5 !default; // Light highlight
-$lt2: #858585 !default; // Light bg text secondary
-$lt1: #454545 !default; // Light bg text primary
+$lbg: #FAFBFC !default; // Light background
+$lhl: #EAEBEC !default; // Light highlight
+$lt2: #8A8B8C !default; // Light bg text secondary
+$lt1: #4A4B4C !default; // Light bg text primary
 
-$red: #C62828 !default; // Red
-$ora: #E65100 !default; // Orange
-$yel: #F9A825 !default; // Yellow
-$gre: #689F38 !default; // Green
+$red: #C6414D !default; // Red
+$ora: #D9754D !default; // Orange
+$yel: #D9A53D !default; // Yellow
+$gre: #679D35 !default; // Green
 
-$cya: #0097A7 !default; // Cyan
-$blu: #1565C0 !default; // Blue
-$vio: #8E24AA !default; // Violet
-$mag: #EC407A !default; // Magenta
+$cya: #379AAB !default; // Cyan
+$blu: #267DC6 !default; // Blue
+$vio: #9E6BCD !default; // Violet
+$mag: #DC6C95 !default; // Magenta
 
 // Site-wide colours
 
@@ -59,15 +64,18 @@ $link: $blu !default;
 $linkalt: $cya !default;
 
 // Dividers
+
 $dark1: rgba(#000, .1) !default;
 $dark2: rgba(#000, .2) !default;
 $penumbra: 0 1px 3px $dark2 !default;
 
 // Space
+
 $shalf: .5rem !default;
 $sone: 1rem !default;
 
 // Mixins
+
 @mixin bodynormal {
   font-family: $sans;
   line-height: $line-height;

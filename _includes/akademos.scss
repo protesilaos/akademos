@@ -13,39 +13,14 @@
         "variables"
 ;
 
-// This goes to the demo
+{% assign themes = site.data.themes %}
+{% assign styles = site.akademos-style %}
 
-{% if page.permalink == "/oliveira-light/" %}
-  @import "themes/oliveira-light";
-{% elsif page.permalink == "/oliveira-dark/" %}
-  @import "themes/oliveira-dark";
-{% elsif page.permalink == "/blau-light/" %}
-  @import "themes/blau-light";
-{% elsif page.permalink == "/blau-dark/" %}
-  @import "themes/blau-dark";
-{% elsif page.permalink == "/cyprium-light/" %}
-  @import "themes/cyprium-light";
-{% elsif page.permalink == "/cyprium-dark/" %}
-  @import "themes/cyprium-dark";
-{% elsif page.permalink == "/flowerbed-light/" %}
-  @import "themes/flowerbed-light";
-{% elsif page.permalink == "/flowerbed-dark/" %}
-  @import "themes/flowerbed-dark";
-{% elsif page.permalink == "/nefelio-light/" %}
-  @import "themes/nefelio-light";
-{% elsif page.permalink == "/nefelio-dark/" %}
-  @import "themes/nefelio-dark";
-{% elsif page.permalink == "/overgrowth-light/" %}
-  @import "themes/overgrowth-light";
-{% elsif page.permalink == "/overgrowth-dark/" %}
-  @import "themes/overgrowth-dark";
-{% endif %}
-
-// This goes to the gem
-
-{% if site.akademos-style %}
-  @import "{{ site.akademos-style | prepend: "themes/" }}";
-{% endif %}
+{% for theme in themes %}
+  {% if styles contains theme.url %}
+    @import "{{ theme.url | prepend: 'themes/' }}";
+  {% endif %}
+{% endfor %}
 
 @import
         "base",
