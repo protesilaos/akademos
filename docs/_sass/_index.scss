@@ -1,0 +1,53 @@
+.home-loop {
+  margin: ($vrythm * 2) auto;
+
+  &:last-child {
+    margin-bottom: ($vrythm * 1.5);
+  }
+
+  h2 {
+    font-size: $lsize;
+  }
+
+  ul {
+    margin: 0;
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 0;
+
+    li {
+      padding: $sone 0;
+      border-bottom: thin solid $dark1;
+    }
+
+    li:last-child {
+      border-bottom: none;
+    }
+
+    a {
+      display: inline-block;
+
+      @include tablet {
+        float: left;
+        width: 80%;
+      }
+    }
+
+    .post-meta {
+      font-family: $mono;
+      font-size: $xssize;
+      color: $text2;
+      display: block;
+      margin: $shalf 0;
+
+      @include tablet {
+        display: inline-block;
+        float: right;
+        text-align: right;
+        width: 15%;
+        font-size: $xssize;
+        margin: $shalf 0 0 5%;
+      }
+    }
+  }
+}

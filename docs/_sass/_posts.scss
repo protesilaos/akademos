@@ -1,0 +1,61 @@
+.post-header {
+  background: $bg1;
+  color: $text1;
+  text-align: left;
+  padding: ($vrythm * 2) ($sone * 2);
+  margin: 0 0 ($vrythm * 2);
+
+  h1 {
+    font-size: $msize * 1.602;
+    font-weight: 400;
+    margin: $shalf auto $vrythm;
+    padding: 0;
+
+    @include desktop {
+      font-size: $xxlsize;
+    }
+  }
+
+  .post-meta {
+    display: block;
+    color: $text2;
+    font-size: $ssize;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  time + span::before {
+    content: "/";
+    display: inline-block;
+    color: $dark2;
+    padding: 0 $shalf 0 ($shalf / 2);
+  }
+
+  @include desktop {
+    padding: ($vrythm * 3) ($sone * 2);
+  }
+}
+
+.post-content {
+  color: $text0;
+  padding-bottom: $vrythm;
+
+  +.nextprev {
+    padding-bottom: 0;
+  }
+}
+
+.post-intro {
+  color: $text2;
+  font-size: $lsize;
+  padding: 0;
+
+  +.post-meta {
+    margin: $vrythm auto;
+    padding: 0;
+  }
+
+  @include desktop {
+    font-size: $xlsize;
+  }
+}

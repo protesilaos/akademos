@@ -1,0 +1,11 @@
+{% assign themes = site.data.akademos-themes | sort: 'name' %}
+
+<ol>
+{% for theme in themes %}
+  <li>
+    <a href="/akademos/{{ theme.url }}">
+      {{ theme.name }}
+    </a>
+  </li>
+{% endfor %}
+</ol>

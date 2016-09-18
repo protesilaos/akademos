@@ -1,0 +1,10 @@
+- name: Twitter
+  url: "https://twitter.com/YOUR_USERNAME"
+- name: Facebook
+  url: "https://www.facebook.com/YOUR_USERNAME"
+- name: LinkedIn
+  url: "https://www.linkedin.com/in/YOUR_USERNAME"
+- name: Instagram
+  url: "https://www.instagram.com/YOUR_USERNAME"
+- name: GitHub
+  url: "https://github.com/YOUR_USERNAME"

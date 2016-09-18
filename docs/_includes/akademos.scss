@@ -1,0 +1,47 @@
+@charset "UTF-8";
+
+/*
+*
+* Akademos - Minimalist theme for writers and coders
+* @author Protesilaos Stavrou <public@protesilaos.com> (http://www.protesilaos.com/)
+* @license MIT
+*
+*/
+
+@import
+        "normalize",
+        "variables"
+;
+
+{% assign themes = site.data.akademos-themes %}
+
+{% for theme in themes %}
+  {% if page.permalink contains theme.url %}
+    @import "{{ theme.url | prepend: 'themes/' }}";
+  {% endif %}
+{% endfor %}
+
+// {% assign themes = site.data.akademos-themes %}
+// {% assign styles = site.data.akademos.style %}
+//
+// {% for theme in themes %}
+//   {% if styles contains theme.url %}
+//     @import "{{ theme.url | prepend: 'themes/' }}";
+//   {% endif %}
+// {% endfor %}
+
+@import
+        "base",
+        "links",
+        "placement",
+        "typography",
+        "header",
+        "footer",
+        "index",
+        "posts",
+        "social",
+        "nextprev",
+        "footnotes",
+        "syntax",
+        "notifications"
+;

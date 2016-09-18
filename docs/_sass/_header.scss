@@ -1,0 +1,93 @@
+.site-header {
+  background: $bg2;
+  font-family: $fontui;
+}
+
+.header-inner {
+  padding: $sone ($sone * 2);
+
+  @include tablet {
+    width: $measure;
+    margin: 0 auto;
+  }
+
+  @include desktop {
+    padding: $sone * 2;
+    width: auto;
+
+    &.measure {
+      max-width: $measure + 10;
+    }
+  }
+}
+
+.site-nav {
+  ul {
+    font-size: $xssize;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+
+    @include desktop {
+      font-size: $xssize;
+    }
+  }
+
+  li {
+    display: inline-block;
+    margin-right: $sone;
+    line-height: $sone * 2;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    @include tablet {
+      line-height: $vrythm;
+    }
+
+    @include desktop {
+      margin-right: $sone * 1.25;
+    }
+  }
+}
+
+.site-header section {
+  display: block;
+  height: auto;
+  float: left;
+  margin: $shalf 0;
+
+  div,
+  nav {
+    line-height: $vrythm;
+  }
+
+  @include desktop {
+    margin: 0;
+  }
+}
+
+.site-name {
+  width: 100%;
+  font-size: $msize;
+  font-weight: 700;
+  text-align: left;
+
+  @include desktop {
+    width: 29%;
+    margin-right: 1%;
+  }
+}
+
+.site-menu {
+  width: 100%;
+  text-align: left;
+  text-transform: uppercase;
+
+  @include desktop {
+    width: 69%;
+    text-align: right;
+    margin-left: 1%;
+  }
+}

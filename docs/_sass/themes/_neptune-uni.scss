@@ -1,0 +1,88 @@
+/*
+    Name: Neptune
+    Author: Protesilaos Stavrou (http://www.protesilaos.com)
+    Description: Tested with Rouge-enabled Jekyll sites
+    Theme URL: http://www.protesilaos.com/neptune
+*/
+
+// Colour scheme --------------------------
+
+$dbg: #282C36; // Dark background
+$dhl: #383C46; // Dark highlight
+$dt2: #686C76; // Dark bg text secondary
+$dt1: #A8ACB6; // Dark bg text primary
+
+$lbg: #F0F1F8; // Light background
+$lhl: #E0E1E8; // Light highlight
+$lt2: #808188; // Light bg text secondary
+$lt1: #404148; // Light bg text primary
+
+$red: #A97552; // Red
+$ora: #C78956; // Orange
+$gre: #48B788; // Green
+$blu: #3C8CBB; // Blue
+
+$mag: #C789A6; // Magenta
+$yel: #B9A552; // Yellow
+$cya: #55AFAF; // Cyan
+$vio: #7A7DCA; // Violet
+
+// Site-wide colours
+
+$bg: $lbg;
+$bg1: $dbg;
+$bg2: darken($dbg, 1.5%);
+$bhl: $lhl;
+$text1: $lt1;
+$text2: $lt2;
+$link: $blu;
+$linkalt: $cya;
+
+// Dividers
+
+$dark1: transparentize($text1, .90);
+$dark2: transparentize($text1, .80);
+$penumbra: 0 1px 3px transparentize(#000, .8);
+
+// Syntax Defaults ------------------------
+
+$t1: $dt1;
+$t2: $dt2;
+$background: $bg1;
+
+// Colour order
+
+$primary1: $blu;
+$primary2: $mag;
+$primary3: $cya;
+
+$secondary1: $vio;
+$secondary2: $gre;
+
+$tertiary1: $red;
+$tertiary2: $ora;
+$tertiary3: $yel;
+
+// Adjustments for uniformity -------------
+
+.post-header {
+  color: $dt1 !important;
+
+  .post-meta {
+    color: $dt2 !important;
+  }
+}
+
+.footnotes {
+  background: darken($lbg, 1.5%) !important;
+}
+
+.nextprev,
+.site-footer {
+  color: $dt1 !important;
+}
+
+.post-intro,
+.nextprev-tag {
+  color: $dt2 !important;
+}

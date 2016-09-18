@@ -1,0 +1,54 @@
+.menu-social {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  li {
+    display: inline-block;
+    padding: $sone 0;
+
+    + li {
+      margin-right: $shalf / 2;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  span {
+    display: none;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+  }
+
+  a {
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    width: $sone * 1.5;
+    height: $sone * 1.5;
+    @include font-smoothing;
+    @include radius(50%);
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: transparentize($linkalt, 0.3);
+    }
+
+    &::before {
+      font-family: "FontAwesome";
+      line-height: $sone * 1.5;
+    }
+
+    @each $social-brand, $social-icon in $social-icons {
+      &[href*="#{$social-brand}"] {
+        &::before {
+          content: map-get($social-icon, content);
+        }
+      }
+    }
+  }
+}

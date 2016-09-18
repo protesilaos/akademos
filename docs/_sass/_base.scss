@@ -1,0 +1,163 @@
+body {
+  font-family: $font1;
+  font-size: $base-font-size;
+  line-height: $line-height;
+  color: $text1;
+  background-color: $bg;
+  word-wrap: break-word;
+  margin: 0;
+
+  @include tablet {
+    font-size: $base-font-size + 2;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $font2;
+  font-weight: 700;
+  margin-bottom: $vrythm / 2;
+  padding: 0;
+}
+
+h1,
+.h1 {
+  font-size: $xlsize;
+
+  @include tablet {
+    font-size: $xxlsize;
+  }
+}
+
+h2,
+.h2 {
+  font-size: $lsize;
+
+  @include tablet {
+    font-size: $xlsize;
+  }
+}
+
+h3,
+.h3 {
+  font-size: $msize;
+
+  @include tablet {
+    font-size: $lsize;
+  }
+}
+
+h4,
+.h4 {
+  font-size: $msize;
+}
+
+h5,
+.h5 {
+  font-size: $ssize;
+}
+
+h6,
+.h6 {
+  font-size: $xssize;
+}
+
+p {
+  margin: 0 0 $vrythm;
+  padding: 0;
+}
+
+b,
+strong {
+  font-weight: 700;
+}
+
+i,
+em {
+  font-style: italic;
+}
+
+blockquote {
+  margin: 0;
+  padding: 0;
+  border-left: medium solid $dark2;
+
+  p {
+    font-style: italic;
+    padding-left: $vrythm;
+  }
+}
+
+ul,
+ol {
+  margin: $vrythm 0;
+  padding: 0 0 0 $sone;
+}
+
+pre,
+code,
+samp {
+  font-family: $mono;
+  font-size: 0.875em;
+
+  .footnotes & {
+    font-size: 1em;
+  }
+}
+
+pre {
+  overflow-x: auto;
+  white-space: pre;
+  word-break: inherit;
+  word-wrap: inherit;
+  margin: $vrythm 0;
+}
+
+figure {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border: 0;
+}
+
+small {
+  font-size: $xssize;
+}
+
+time {
+  color: $text2;
+}
+
+.post-meta {
+  font-family: $font2;
+  @extend p;
+}
+
+abbr {
+  border-bottom: thin dotted $dark2;
+  cursor: help;
+}
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}

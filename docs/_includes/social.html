@@ -1,0 +1,11 @@
+{% assign profiles = site.data.akademos-social %}
+
+<ul class="menu-social">
+{% for profile in profiles %}
+  <li>
+    <a href="{{ profile.url }}">
+      <span>{{ profile.name }}</span>
+    </a>
+  </li>
+{% endfor %}
+</ul>

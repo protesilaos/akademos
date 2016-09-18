@@ -1,0 +1,63 @@
+/*
+    Name: Cyprium (light variant)
+    Author: Protesilaos Stavrou (http://www.protesilaos.com)
+    Description: Tested with Rouge-enabled Jekyll sites
+    Theme URL: http://www.protesilaos.com/cyprium
+*/
+
+// Colour scheme --------------------------
+
+$dbg: #374934; // Dark background
+$dhl: #475944; // Dark highlight
+$dt2: #879984; // Dark bg text secondary
+$dt1: #A7B9A4; // Dark bg text primary
+
+$lbg: #EBE9DA; // Light background
+$lhl: #DBD9CA; // Light highlight
+$lt2: #9B998A; // Light bg text secondary
+$lt1: #6B695A; // Light bg text primary
+
+$red: #C36A5F; // Red
+$ora: #B37521; // Orange
+$gre: #6B8C4A; // Green
+$blu: #3C959A; // Blue
+
+$mag: #BB6384; // Magenta
+$yel: #A38E10; // Yellow
+$cya: #5C9B85; // Cyan
+$vio: #8B85BA; // Violet
+
+// Site-wide colours
+
+$bg: lighten($lbg, 1.5%);
+$bg1: $lbg;
+$bg2: darken($lbg, 1.5%);
+$bhl: $lhl;
+$text1: $lt1;
+$text2: $lt2;
+$link: $ora;
+$linkalt: $gre;
+
+// Dividers
+$dark1: transparentize($text1, .90);
+$dark2: transparentize($text1, .80);
+$penumbra: 0 1px 3px transparentize(#000, .8);
+
+// Syntax Defaults ------------------------
+
+$t1: $text1;
+$t2: $text2;
+$background: $bg1;
+
+// Colour order
+
+$primary1: $yel;
+$primary2: $ora;
+$primary3: $gre;
+
+$secondary1: $cya;
+$secondary2: $blu;
+
+$tertiary1: $red;
+$tertiary2: $vio;
+$tertiary3: $mag;

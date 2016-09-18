@@ -1,0 +1,14 @@
+---
+layout: default
+---
+<div class="post">
+  <header class="post-header">
+    <h1 class="measure">{{ page.title }}</h1>
+    {% if page.subtitle %}
+      <p class="post-intro measure">{{ page.subtitle }}</p>
+    {% endif %}
+  </header>
+  <article class="post-content measure">
+  {{ content }}
+  </article>
+</div>

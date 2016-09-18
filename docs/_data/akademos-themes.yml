@@ -1,0 +1,17 @@
+- name: Blau dark
+  url: "blau-dark"
+
+- name: Cyprium light
+  url: "cyprium-light"
+
+- name: Flowerbed dark
+  url: "flowerbed-dark"
+
+- name: Alto light (default)
+  url: "alto-light"
+
+- name: Gaia uniform
+  url: "gaia-uni"
+
+- name: Neptune uniform
+  url: "neptune-uni"

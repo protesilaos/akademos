@@ -1,0 +1,18 @@
+<footer class="site-footer">
+  <div class="footer-inner measure clearfix">
+    <section class="copyright">
+      <span>
+        {{ site.data.akademos.copyright }}<br/>
+        <!-- FOR GEM Copyright © {{ site.time | date: '%Y' }} <a href="{{ site.url }}">{{ site.title }}</a><br/> -->
+        <small>
+          {% include akademos-attribution.html %}
+        </small>
+      </span>
+    </section>
+    <section class="social-links">
+      {% if site.data.akademos.social == true %}
+        {% include social.html %}
+      {% endif %}
+    </section>
+  </div>
+</footer>

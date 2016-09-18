@@ -1,0 +1,52 @@
+.site-footer {
+  background: $bg2;
+  color: $text1;
+  text-align: left;
+
+  span {
+  display: block;
+  font-size: $ssize;
+  margin: $shalf auto;
+
+    @include desktop {
+      display: inline-block;
+    }
+  }
+}
+
+.footer-inner {
+  padding: $sone ($sone * 2);
+
+  @include tablet {
+    width: $measure;
+    margin: 0 auto;
+  }
+
+  @include desktop {
+    padding: $sone * 2;
+    width: auto;
+
+    &.measure {
+      max-width: $measure + 10;
+    }
+  }
+
+  section {
+    width: 100%;
+    display: block;
+    float: left;
+
+    @include desktop {
+      width: 49%;
+      display: inline-block;
+
+      + section {
+        margin-left: 1%;
+      }
+
+      &:last-of-type {
+        text-align: right;
+      }
+    }
+  }
+}

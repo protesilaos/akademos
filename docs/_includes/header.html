@@ -1,0 +1,18 @@
+<header class="site-header">
+  <div class="header-inner measure clearfix">
+    <section class="site-name">
+      <div>
+        <a href="/" class="site-title">
+          {{ site.title }}
+        </a>
+      </div>
+    </section>
+    <section class="site-menu">
+      {% if site.data.akademos-menu %}
+      <nav class="site-nav">
+        {% include navigation.html %}
+      </nav>
+      {% endif %}
+    </section>
+  </div>
+</header>

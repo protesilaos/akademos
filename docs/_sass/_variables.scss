@@ -1,0 +1,168 @@
+// Typography
+
+$base-font-size: 16px;
+$line-height: 1.602;
+$vrythm: 1.602rem;
+
+$serif: Georgia, "Bitstream Charter", serif;
+$sans: Helvetiva, Arial, "Liberation Sans", sans-serif;
+$mono: Menlo, "Lucida Sans Typewriter", "Lucida Console", "DejaVu Sans Mono", "Liberation Mono", Courier, monospace;
+
+$font1: $serif;
+$font2: $sans;
+$fontui: $sans;
+
+// Major second
+
+$xxlsize: 1.602rem;
+$xlsize: 1.266rem;
+$lsize: 1.125rem;
+$msize: 1rem;
+$ssize: .889rem;
+$xssize: .79rem;
+
+// Page width
+
+$measure: 40rem;
+
+// Viewports
+
+$tablet: 48em;
+$desktop: 64em;
+
+/*
+  Alto (light variant)
+  Default colour scheme
+  Will be used if no theme is specified
+*/
+
+$dbg: #182D2A !default; // Dark background
+$dhl: #283D3A !default; // Dark highlight
+$dt2: #687D7A !default; // Dark bg text secondary
+$dt1: #98ADAA !default; // Dark bg text primary
+
+$lbg: #FAFAEC !default; // Light background
+$lhl: #EAEADC !default; // Light highlight
+$lt2: #8A8A7C !default; // Light bg text secondary
+$lt1: #5A5A4C !default; // Light bg text primary
+
+$red: #C6414D !default; // Red
+$ora: #C9753D !default; // Orange
+$yel: #C6A13D !default; // Yellow
+$gre: #679945 !default; // Green
+
+$cya: #57AB8B !default; // Cyan
+$blu: #378BBD !default; // Blue
+$vio: #9A7BC8 !default; // Violet
+$mag: #C97885 !default; // Magenta
+
+// Site-wide colours
+
+$bg: lighten($lbg, 2%) !default;
+$bg1: $lbg !default;
+$bg2: darken($lbg, 1%) !default;
+$bhl: $lhl !default;
+$text1: $lt1 !default;
+$text2: $lt2 !default;
+$text0: darken($text1, 1.5%) !default;
+$link: $blu !default;
+$linkalt: $cya !default;
+
+// Syntax Defaults
+
+$t1: $text1 !default;
+$t2: $text2 !default;
+$background: $bg1 !default;
+
+// Colour order
+
+$primary1: $gre !default;
+$primary2: $vio !default;
+$primary3: $mag !default;
+
+$secondary1: $cya !default;
+$secondary2: $ora !default;
+
+$tertiary1: $blu !default;
+$tertiary2: $yel !default;
+$tertiary3: $red !default;
+
+// Dividers
+
+$dark1: rgba(#000, .1) !default;
+$dark2: rgba(#000, .2) !default;
+$penumbra: 0 1px 3px $dark2 !default;
+
+// Space
+
+$shalf: .5rem !default;
+$sone: 1rem !default;
+
+// Mixins
+
+@mixin shadow {
+  -webkit-box-shadow: $penumbra;
+  -moz-box-shadow: $penumbra;
+  -ms-box-shadow: $penumbra;
+  box-shadow: $penumbra;
+}
+
+@mixin font-smoothing {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@mixin radius($degree) {
+  -webkit-border-radius: $degree;
+  -moz-border-radius: $degree;
+  -ms-border-radius: $degree;
+  border-radius: $degree;
+}
+
+@mixin transition {
+  -webkit-transition: all ease-in-out 300ms;
+  -moz-transition: all ease-in-out 300ms;
+  -o-transition: all ease-in-out 300ms;
+  transition: all ease-in-out 300ms;
+}
+
+@mixin tablet {
+  @media screen and (min-width: #{$tablet}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media screen and (min-width: #{$desktop}) {
+    @content;
+  }
+}
+
+@mixin notification($bg-colour, $border-colour) {
+  background: transparentize($bg-colour, 0.9);
+  border: thin solid transparentize($border-colour, 0.7);
+}
+
+@mixin bigblock {
+  padding: ($sone * 2.5) ($sone * 5);
+  margin-right: -($sone * 5);
+  margin-left: -($sone * 5);
+}
+
+// Maps
+
+$social-brand: (
+  twitter: (content: "twitter.com"),
+  facebook: (content: "facebook.com"),
+  linkedin: (content: "linkedin.com"),
+  instagram: (content: "instagram.com"),
+  github: (content: "github.com")
+);
+
+ $social-icons: (
+  twitter: (content: "\f099"),
+  facebook: (content: "\f09a"),
+  linkedin: (content: "\f0e1"),
+  instagram: (content: "\f16d"),
+  github: (content: "\f09b")
+);

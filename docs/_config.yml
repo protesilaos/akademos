@@ -1,0 +1,34 @@
+# Site settings
+title: Protesilaos Stavrou
+email: public@protesilaos.com
+description: Akademos is a minimalist Jekyll theme for writers and coders
+url: "http://www.protesilaos.com"
+baseurl: "/akademos"
+
+# Collections
+collections:
+  schemes:
+    output: true
+
+defaults:
+  - scope:
+      type: schemes
+    values:
+      layout: post
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+sass:
+  style: compressed
+gems:
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-redirect-from
+
+# Serving
+port: 8000

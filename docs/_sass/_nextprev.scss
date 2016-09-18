@@ -1,0 +1,32 @@
+.nextprev {
+  background: $bg1;
+  font-size: $lsize;
+  display: block;
+  overflow: hidden;
+  margin: 0;
+
+  div {
+    @extend .measure;
+    display: block;
+    padding: ($vrythm * 3) ($sone * 2);
+
+    &:first-child {
+      padding-bottom: $vrythm;
+    }
+
+    + div {
+      padding-top: $vrythm;
+      border-top: thin solid $dark1;
+    }
+
+    &:only-child {
+      padding: ($vrythm * 3) ($sone * 2);
+    }
+  }
+
+  span {
+    font-family: $mono;
+    color: $text2;
+    margin-right: $shalf;
+  }
+}

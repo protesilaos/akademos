@@ -1,0 +1,42 @@
+p + h2,
+p + h3,
+ul + h2,
+ul + h3,
+ol + h2,
+ol + h3,
+blockquote + h2,
+blockquote + h3,
+div + h2,
+div + h3,
+small + h2,
+small + h3 {
+  margin-top: $vrythm * 1.5;
+}
+
+h2 + h3,
+h3 + h4 {
+  margin-top: 0;
+}
+
+ul ul,
+ul ol,
+ol ol,
+ol ul {
+  margin: 0;
+}
+
+ol ul {
+  list-style-type: disc;
+}
+
+p,
+li {
+  code {
+    color: $primary3;
+    background: transparentize($primary3, 0.95);
+  }
+}
+
+.print-section {
+  page-break-before: always;
+}

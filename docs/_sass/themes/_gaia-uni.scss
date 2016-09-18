@@ -1,0 +1,88 @@
+/*
+    Name: Gaia
+    Author: Protesilaos Stavrou (http://www.protesilaos.com)
+    Description: Tested with Rouge-enabled Jekyll sites
+    Theme URL: http://www.protesilaos.com/gaia
+*/
+
+// Colour scheme --------------------------
+
+$dbg: #2D2E2F; // Dark background
+$dhl: #3D3E3F; // Dark highlight
+$dt2: #7D7E7F; // Dark bg text secondary
+$dt1: #ADAEAF; // Dark bg text primary
+
+$lbg: #EBEDDF; // Light background
+$lhl: #DBDDCF; // Light highlight
+$lt2: #9B9D8F; // Light bg text secondary
+$lt1: #6B6D5F; // Light bg text primary
+
+$red: #9D6936; // Red
+$ora: #BD8A21; // Orange
+$gre: #9B9C2A; // Green
+$blu: #6C9CBA; // Blue
+
+$mag: #BD9198; // Magenta
+$yel: #BDAA4A; // Yellow
+$cya: #85AF85; // Cyan
+$vio: #8A8DB7; // Violet
+
+// Site-wide colours
+
+$bg: $lbg;
+$bg1: $dbg;
+$bg2: darken($dbg, 1.5%);
+$bhl: $lhl;
+$text1: $lt1;
+$text2: $lt2;
+$link: $ora;
+$linkalt: $red;
+
+// Dividers
+
+$dark1: transparentize($text1, .90);
+$dark2: transparentize($text1, .80);
+$penumbra: 0 1px 3px transparentize(#000, .8);
+
+// Syntax Defaults ------------------------
+
+$t1: $dt1;
+$t2: $dt2;
+$background: $bg1;
+
+// Colour order
+
+$primary1: $red;
+$primary2: $gre;
+$primary3: $ora;
+
+$secondary1: $cya;
+$secondary2: $yel;
+
+$tertiary1: $blu;
+$tertiary2: $vio;
+$tertiary3: $mag;
+
+// Adjustments for uniformity -------------
+
+.post-header {
+  color: $dt1 !important;
+
+  .post-meta {
+    color: $dt2 !important;
+  }
+}
+
+.footnotes {
+  background: darken($lbg, 1.5%) !important;
+}
+
+.nextprev,
+.site-footer {
+  color: $dt1 !important;
+}
+
+.post-intro,
+.nextprev-tag {
+  color: $dt2 !important;
+}

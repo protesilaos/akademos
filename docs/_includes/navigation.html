@@ -1,0 +1,11 @@
+{% assign links = site.data.akademos-menu %}
+
+<ul>
+{% for link in links %}
+  <li>
+    <a href="{{ link.url }}">
+      {{ link.name }}
+    </a>
+  </li>
+{% endfor %}
+</ul>

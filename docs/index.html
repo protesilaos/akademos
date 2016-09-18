@@ -1,0 +1,20 @@
+---
+layout: page
+title: Akademos Demo Pages
+subtitle: A Jekyll theme for writers and coders
+---
+
+<div class="home-loop">
+  <ul>
+    {% for post in site.posts limit:6 %}
+      <li class="clearfix">
+        <a href="{{ post.url | prepend: site.baseurl }}">
+          {{ post.title }}
+        </a>
+        <span class="post-meta">
+          {{ post.date | date: '%b %d, %Y' }}
+        </span>
+      </li>
+    {% endfor %}
+  </ul>
+</div>
